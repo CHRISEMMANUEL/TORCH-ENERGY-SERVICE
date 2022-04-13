@@ -57,7 +57,7 @@
  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>register</title>
+    <title>PROJECT WEEKLY REPORT</title>
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
      <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
      <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">

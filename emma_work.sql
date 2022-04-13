@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 10, 2022 at 03:33 PM
+-- Generation Time: Apr 13, 2022 at 05:12 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.4.0
 
@@ -25,6 +25,53 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `daily_report`
+--
+
+DROP TABLE IF EXISTS `daily_report`;
+CREATE TABLE IF NOT EXISTS `daily_report` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `client` varchar(100) NOT NULL,
+  `contract` varchar(200) NOT NULL,
+  `project_name` varchar(200) NOT NULL,
+  `dailyreport_no` varchar(100) NOT NULL,
+  `dailyreport_day` varchar(100) NOT NULL,
+  `dailyreport_date` date NOT NULL,
+  `general_activities` text NOT NULL,
+  `activities_performed_today` text NOT NULL,
+  `activities_planned_tomorrow` text NOT NULL,
+  `torch_qty` varchar(200) NOT NULL,
+  `client_qty` varchar(200) NOT NULL,
+  `sub_contractor_qty` varchar(200) NOT NULL,
+  `community_qty` varchar(100) NOT NULL,
+  `equipment_1` varchar(100) NOT NULL,
+  `equipment_2` varchar(100) NOT NULL,
+  `equipment_3` varchar(100) NOT NULL,
+  `equipment_4` varchar(100) NOT NULL,
+  `equipment_5` varchar(100) NOT NULL,
+  `equipment_6` varchar(100) NOT NULL,
+  `equipment_1_qty` varchar(100) NOT NULL,
+  `equipment_2_qty` varchar(100) NOT NULL,
+  `equipment_3_qty` varchar(100) NOT NULL,
+  `equipment_4_qty` varchar(100) NOT NULL,
+  `equipment_5_qty` varchar(100) NOT NULL,
+  `equipment_6_qty` varchar(100) NOT NULL,
+  `unsafe_act` varchar(200) NOT NULL,
+  `unsafe_condition` varchar(200) NOT NULL,
+  `accident` varchar(200) NOT NULL,
+  `environmental_condition` varchar(200) NOT NULL,
+  `others` varchar(200) NOT NULL,
+  `miscellaneous_report` text NOT NULL,
+  `name_reportby` varchar(200) NOT NULL,
+  `name_approvedby` varchar(200) NOT NULL,
+  `reportedby_date` date NOT NULL,
+  `approvedby_date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `daily_site_report`
 --
 
@@ -41,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `daily_site_report` (
   `listof_tools` varchar(200) NOT NULL,
   `observation` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `daily_site_report`
@@ -49,7 +96,9 @@ CREATE TABLE IF NOT EXISTS `daily_site_report` (
 
 INSERT INTO `daily_site_report` (`id`, `report_date`, `title`, `client`, `nosof_days_onsite`, `nosof_personnel`, `activities`, `next_plan`, `listof_tools`, `observation`) VALUES
 (1, '2022-04-03 00:00:00', 'road', 'kola', '43', '32', 'klskdf', 'kljadls', 'mnskad', 'kjlkj;ldas'),
-(2, '2022-04-03 00:00:00', 'road', 'kola', '43', '32', 'klskdf', 'kljadls', 'mnskad', 'endorse by kola');
+(2, '2022-04-03 00:00:00', 'road', 'kola', '43', '32', 'klskdf', 'kljadls', 'mnskad', 'endorse by kola'),
+(3, '2022-04-03 00:00:00', 'jlklkdlsa', 'jkskad', '89932', '98', 'nxczx', 'cxz', 'xcxz', 'dsjkjds'),
+(4, '2022-04-03 00:00:00', 'jlklkdlsa', 'jkskad', '89932', '98', 'nxczx', 'cxz', 'xcxz', 'dsjkjds');
 
 -- --------------------------------------------------------
 
