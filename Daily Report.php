@@ -123,7 +123,7 @@
       <div class="container">
          <table width="90%">
             <tr>
-               <td colspan="7">Logo</td>
+               <td colspan="7">TORCH</td>
                
                <td style="float: right;"><b><u>DAILY REPORT</u></b></td>
             </tr>
